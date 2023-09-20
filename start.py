@@ -98,15 +98,85 @@ os.system('clear')
 #print(names[4][3])
 #print(names[4][3] + 5)
 
+#names.append(40)
+#print(names)
+#print(names[4] + 5)
+
+#### Checking if an item is in the list ##################
+thislist = ["apple", "lemon", "cherry", "pineapple"]
+if "apple" in thislist:
+    print("Yes, apple is in the list.")
+
+###### List Ranges #########################################
+thislist = ["apple", "lemon", "cherry", "pineapple"]
+print(thislist[1:4])
+print(thislist[2:])
+print(thislist[:-1])
+
+
+######### Range of Negative indexes###############
+thislist = ["apple", "lemon", "cherry", "pineapple"]
+print(thislist[-4:-1])
+
+########## Changing the item value #####################################
+thislist[1] = "Banana"
+thislist[3] = "mango"
+print(thislist)
+
+####### Changing a range of item values ################################
+thislist[2:4] = ["water", "blueberry"] 
+print(thislist)
+
+##If you insert less items than you replace, the new items will be inserted where you specifird, amd the remaining items will move accordingly.
+
+##### Inserting Items #######################################################################
+
+List1 = ["apple", "banana", "orange", "pineapple"]
+List1.insert(2,"watermelon")
+print(List1)
+
+
+########### Extend List ###########################################################################
+#To append elements from another list to the current list, use the extend() method.
+List1.extend(thislist)
+print(List1)
+
+
 ########################## List##################
 
 ############ Tuples ############################
 
+#name_2 = ("John", "Bob", "Tina")
+#tuple1 = ("Mary",)
+#tuple2 = name_2 + tuple1
+#print(tuple2[1:2])
+
+#print(name_2)
+#print(name_2[1])
+############ Tuple ######################################
+
 name_2 = ("John", "Bob", "Tina")
+print(list(name_2))
+print(tuple(name_2))
 
-print(name_2)
+
+############# Dictionaries ########################
+
+favorite_pizz = {
+    "John": "Pepperoni",
+    "Tim": "Sausage",
+    "Mary": "Cheese"
+}
+print(favorite_pizz)
+print(favorite_pizz["John"])
+#del favorite_pizz["John"]
+
+#print(favorite_pizz)
+
+favorite_pizz.update({"Tina": "Green Peppers"})
+print(favorite_pizz)
+
+favorite_pizz["John"] = "Green Peppers"
+print(favorite_pizz)
 
 
-names.append(40)
-#print(names)
-#print(names[4] + 5)
